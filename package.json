@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "mocha": "mocha tests",
     "test": "eslint . && mocha tests",
-    "benchamark": "./node_modules/.bin/matcha benchmark/*.js"
+    "benchmark": "./node_modules/.bin/matcha benchmark/*.js"
   },
   "author": "rongyi.liu@ele.me",
   "repository": "https://github.com/eleme/node-thrift-protocol",
