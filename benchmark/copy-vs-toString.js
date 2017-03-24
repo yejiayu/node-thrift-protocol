@@ -18,7 +18,7 @@ const large = {
     data: Array.from({ length: 1000 }, () => {
       return {
         fields: Array.from({ length: 1000 }, (item, index) => {
-          return { id: index, type: 'STRING', value: Math.random() + '' };
+          return { id: index, type: 'STRING', value: Buffer.from(Math.random() + '') };
         })
       };
     })
@@ -26,7 +26,7 @@ const large = {
 };
 
 const bigStr = {
-  name: Array.from({ length: 10000 }).reduce((p, c) => p += 'ping', 'ping'),
+  name: Buffer.from(Array.from({ length: 10000 }).reduce((p, c) => p += 'ping', 'ping')),
   id: 10,
   type: 'REPLY',
   fields: [
