@@ -93,6 +93,8 @@ class TMessage {
       } else {
         buf[method](value, this.offset);
       }
+
+      this.offset += length;
     }
 
     return buf;
